@@ -14,7 +14,7 @@ const Plans = () => {
     const Card = (props) =>{
         return(
             <div className={props.className}>
-                <div data-aos="fade-left">
+                <div data-aos={props.fadeSide}>
                     <img src={props.imgsrc} alt="img" className="img-fluid" />
                 </div>
                 <div className={props.classNamedesc}>
@@ -29,6 +29,7 @@ const Plans = () => {
         <div>
             <Card
                 className="PLANS PLANS1"
+                fadeSide="fade-right"
                 classNamedesc="plans-desc my-auto card-pad1"
                 imgsrc="../images/online.jpg"
                 title="Work out at home for free"
@@ -36,6 +37,7 @@ const Plans = () => {
             />
             <Card
                 className="PLANS PLANS2"
+                fadeSide="fade-left"
                 classNamedesc="plans-desc my-auto card-pad2"
                 imgsrc="../images/train.jpg"
                 title="Get more with low-cost training programs and advanced features."
