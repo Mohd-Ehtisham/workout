@@ -88,7 +88,7 @@ const Membership = () => {
                     <ul className="bg-color-grey">
                         {
                             liData.map((val)=>{
-                                return<li>
+                                return<li key={val.id}>
                                     {val.list}
                                     </li>
                             })
@@ -101,7 +101,7 @@ const Membership = () => {
                     <ul className="bg-color-grey">
                         {
                             liData2.map((val)=>{
-                                return<li>
+                                return<li key={val.id}>
                                     {val.list}
                                     </li>
                             })
